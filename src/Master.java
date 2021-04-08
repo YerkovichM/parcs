@@ -8,6 +8,7 @@ public class Master {
         point p = info.createPoint();
         channel c = p.createChannel();
         p.execute("DFS");
+        System.out.println("Initial input: SOME BIG STRING");
         c.write("SOME BIG STRING");
 
         System.out.println("Waiting for result...");
