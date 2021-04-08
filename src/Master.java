@@ -15,6 +15,8 @@ public class Master {
         curtask.addJarFile("DFS.jar");
         AMInfo info = new AMInfo(curtask, null);
 
+        System.out.println(STRING);
+
         List<channel> chns = new ArrayList<>();
         for (int i = 0; i < STRING.length(); i += 10) {
             point point = info.createPoint();
