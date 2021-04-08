@@ -21,7 +21,9 @@ public class Master {
             channel chn = point.createChannel();
             chns.add(chn);
             point.execute("DFS");
-            chn.write(STRING.substring(i, i + 10));
+            int end = i + 10;
+            end = Math.min(end, STRING.length());
+            chn.write(STRING.substring(i, end));
         }
         System.out.println("Waiting for result...");
         String result = chns.stream()
