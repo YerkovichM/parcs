@@ -11,7 +11,7 @@ public class Master {
         c.write("SOME BIG STRING");
 
         System.out.println("Waiting for result...");
-        System.out.println("Result: " + c.readLong());
+        System.out.println("Result: " + c.readObject());
         curtask.end();
     }
 }
